@@ -16,10 +16,10 @@
   <EntityType Name="Autorization">
     <Key>
       <PropertyRef Name="Login" />
-      <PropertyRef Name="Passsword" />
+      <PropertyRef Name="Password" />
     </Key>
     <Property Name="Login" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="Passsword" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <EntityType Name="DIski">
     <Key>
@@ -244,7 +244,7 @@
     <EntitySet Name="Autorization" EntityType="Self.Autorization" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [Autorization].[Login] AS [Login], 
-    [Autorization].[Passsword] AS [Passsword]
+    [Autorization].[Password] AS [Password]
     FROM [dbo].[Autorization] AS [Autorization]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="Shop_auto_product" EntityType="Self.Shop_auto_product" store:Type="Tables" store:Schema="dbo">

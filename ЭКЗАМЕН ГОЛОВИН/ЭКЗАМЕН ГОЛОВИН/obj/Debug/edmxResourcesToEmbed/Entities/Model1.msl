@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище OOO_RULModelContainer" CdmEntityContainer="OOO_RULEntities1">
+  <EntityContainerMapping StorageEntityContainer="Хранилище OOO_RULModelContainer" CdmEntityContainer="OOO_RULEntities2">
     <EntitySetMapping Name="Admin">
       <EntityTypeMapping TypeName="OOO_RULModel.Admin">
         <MappingFragment StoreEntitySet="Admin">
@@ -89,7 +89,7 @@
       <EntityTypeMapping TypeName="OOO_RULModel.Autorization">
         <MappingFragment StoreEntitySet="Autorization">
           <ScalarProperty Name="Login" ColumnName="Login" />
-          <ScalarProperty Name="Passsword" ColumnName="Passsword" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

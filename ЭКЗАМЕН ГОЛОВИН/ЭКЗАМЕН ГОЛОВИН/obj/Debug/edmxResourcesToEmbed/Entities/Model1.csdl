@@ -87,10 +87,10 @@
   <EntityType Name="Autorization">
     <Key>
       <PropertyRef Name="Login" />
-      <PropertyRef Name="Passsword" />
+      <PropertyRef Name="Password" />
     </Key>
     <Property Name="Login" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Passsword" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
   <EntityType Name="Shop_auto_product">
     <Key>
@@ -246,7 +246,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="OOO_RULEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="OOO_RULEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admin" EntityType="Self.Admin" />
     <EntitySet Name="DIski" EntityType="Self.DIski" />
     <EntitySet Name="Dvorniki" EntityType="Self.Dvorniki" />
