@@ -1,0 +1,26 @@
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\ЭКЗАМЕН ГОЛОВИН.exe.config
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\ЭКЗАМЕН ГОЛОВИН.exe
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\ЭКЗАМЕН ГОЛОВИН.pdb
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\EntityFramework.dll
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\EntityFramework.xml
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.csproj.AssemblyReference.cache
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.csproj.SuggestedBindingRedirects.cache
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\MainWindow.g.cs
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\Pages\AutorizationPage1.g.cs
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\App.g.cs
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН_Content.g.cs
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН_MarkupCompile.cache
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН_MarkupCompile.lref
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\App.baml
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\MainWindow.baml
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\Pages\AutorizationPage1.baml
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.g.resources
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН_ГОЛОВИН.Properties.Resources.resources
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.csproj.GenerateResource.cache
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.csproj.CoreCompileInputs.cache
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.csproj.CopyComplete
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.exe
+C:\Users\mvm20\source\repos\ЭКЗАМЕН ГОЛОВИН\ЭКЗАМЕН ГОЛОВИН\obj\Debug\ЭКЗАМЕН ГОЛОВИН.pdb

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище OOO_RULModelContainer" CdmEntityContainer="OOO_RULEntities1">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="OOO_RULModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="ID_Admin" ColumnName="ID_Admin" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIski">
+      <EntityTypeMapping TypeName="OOO_RULModel.DIski">
+        <MappingFragment StoreEntitySet="DIski">
+          <ScalarProperty Name="ID_Diskov" ColumnName="ID_Diskov" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dvorniki">
+      <EntityTypeMapping TypeName="OOO_RULModel.Dvorniki">
+        <MappingFragment StoreEntitySet="Dvorniki">
+          <ScalarProperty Name="ID_Dvornikov" ColumnName="ID_Dvornikov" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fonarik">
+      <EntityTypeMapping TypeName="OOO_RULModel.Fonarik">
+        <MappingFragment StoreEntitySet="Fonarik">
+          <ScalarProperty Name="ID_Fonarik" ColumnName="ID_Fonarik" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kolonki">
+      <EntityTypeMapping TypeName="OOO_RULModel.Kolonki">
+        <MappingFragment StoreEntitySet="Kolonki">
+          <ScalarProperty Name="ID_Kolonki" ColumnName="ID_Kolonki" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kovrik">
+      <EntityTypeMapping TypeName="OOO_RULModel.Kovrik">
+        <MappingFragment StoreEntitySet="Kovrik">
+          <ScalarProperty Name="ID_Kovrik" ColumnName="ID_Kovrik" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oil">
+      <EntityTypeMapping TypeName="OOO_RULModel.Oil">
+        <MappingFragment StoreEntitySet="Oil">
+          <ScalarProperty Name="ID_Oil" ColumnName="ID_Oil" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perchatki">
+      <EntityTypeMapping TypeName="OOO_RULModel.Perchatki">
+        <MappingFragment StoreEntitySet="Perchatki">
+          <ScalarProperty Name="ID_Perchatki" ColumnName="ID_Perchatki" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rul">
+      <EntityTypeMapping TypeName="OOO_RULModel.Rul">
+        <MappingFragment StoreEntitySet="Rul">
+          <ScalarProperty Name="ID_Rul" ColumnName="ID_Rul" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VD">
+      <EntityTypeMapping TypeName="OOO_RULModel.VD">
+        <MappingFragment StoreEntitySet="VD">
+          <ScalarProperty Name="ID_VD" ColumnName="ID_VD" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Autorization">
+      <EntityTypeMapping TypeName="OOO_RULModel.Autorization">
+        <MappingFragment StoreEntitySet="Autorization">
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Passsword" ColumnName="Passsword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shop_auto_product">
+      <EntityTypeMapping TypeName="OOO_RULModel.Shop_auto_product">
+        <MappingFragment StoreEntitySet="Shop_auto_product">
+          <ScalarProperty Name="ID_Rul" ColumnName="ID_Rul" />
+          <ScalarProperty Name="ID_Dvornikov" ColumnName="ID_Dvornikov" />
+          <ScalarProperty Name="ID_Fonarik" ColumnName="ID_Fonarik" />
+          <ScalarProperty Name="ID_Oil" ColumnName="ID_Oil" />
+          <ScalarProperty Name="ID_Kovrik" ColumnName="ID_Kovrik" />
+          <ScalarProperty Name="ID_Diskov" ColumnName="ID_Diskov" />
+          <ScalarProperty Name="ID_VD" ColumnName="ID_VD" />
+          <ScalarProperty Name="ID_Perchatki" ColumnName="ID_Perchatki" />
+          <ScalarProperty Name="ID_Kolonki" ColumnName="ID_Kolonki" />
+          <ScalarProperty Name="ID_Admin" ColumnName="ID_Admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

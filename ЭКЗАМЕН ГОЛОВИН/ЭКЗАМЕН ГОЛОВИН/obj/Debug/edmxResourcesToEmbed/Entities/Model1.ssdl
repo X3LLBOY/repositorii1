@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище OOO_RULModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="ID_Admin" />
+    </Key>
+    <Property Name="ID_Admin" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Middlename" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Adres" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Telephone" Type="char" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "OOO_RUL.dbo.Autorization" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Autorization">
+    <Key>
+      <PropertyRef Name="Login" />
+      <PropertyRef Name="Passsword" />
+    </Key>
+    <Property Name="Login" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Passsword" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DIski">
+    <Key>
+      <PropertyRef Name="ID_Diskov" />
+    </Key>
+    <Property Name="ID_Diskov" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dvorniki">
+    <Key>
+      <PropertyRef Name="ID_Dvornikov" />
+    </Key>
+    <Property Name="ID_Dvornikov" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fonarik">
+    <Key>
+      <PropertyRef Name="ID_Fonarik" />
+    </Key>
+    <Property Name="ID_Fonarik" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kolonki">
+    <Key>
+      <PropertyRef Name="ID_Kolonki" />
+    </Key>
+    <Property Name="ID_Kolonki" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kovrik">
+    <Key>
+      <PropertyRef Name="ID_Kovrik" />
+    </Key>
+    <Property Name="ID_Kovrik" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Oil">
+    <Key>
+      <PropertyRef Name="ID_Oil" />
+    </Key>
+    <Property Name="ID_Oil" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Perchatki">
+    <Key>
+      <PropertyRef Name="ID_Perchatki" />
+    </Key>
+    <Property Name="ID_Perchatki" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rul">
+    <Key>
+      <PropertyRef Name="ID_Rul" />
+    </Key>
+    <Property Name="ID_Rul" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "OOO_RUL.dbo.Shop_auto_product" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Shop_auto_product">
+    <Key>
+      <PropertyRef Name="ID_Rul" />
+      <PropertyRef Name="ID_Dvornikov" />
+      <PropertyRef Name="ID_Fonarik" />
+      <PropertyRef Name="ID_Oil" />
+      <PropertyRef Name="ID_Kovrik" />
+      <PropertyRef Name="ID_Diskov" />
+      <PropertyRef Name="ID_VD" />
+      <PropertyRef Name="ID_Perchatki" />
+      <PropertyRef Name="ID_Kolonki" />
+      <PropertyRef Name="ID_Admin" />
+    </Key>
+    <Property Name="ID_Rul" Type="int" Nullable="false" />
+    <Property Name="ID_Dvornikov" Type="int" Nullable="false" />
+    <Property Name="ID_Fonarik" Type="int" Nullable="false" />
+    <Property Name="ID_Oil" Type="int" Nullable="false" />
+    <Property Name="ID_Kovrik" Type="int" Nullable="false" />
+    <Property Name="ID_Diskov" Type="int" Nullable="false" />
+    <Property Name="ID_VD" Type="int" Nullable="false" />
+    <Property Name="ID_Perchatki" Type="int" Nullable="false" />
+    <Property Name="ID_Kolonki" Type="int" Nullable="false" />
+    <Property Name="ID_Admin" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VD">
+    <Key>
+      <PropertyRef Name="ID_VD" />
+    </Key>
+    <Property Name="ID_VD" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Shop_auto__ID_Ad__4E88ABD4">
+    <End Role="Admin" Type="Self.Admin" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Admin">
+        <PropertyRef Name="ID_Admin" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Admin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Di__49C3F6B7">
+    <End Role="DIski" Type="Self.DIski" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIski">
+        <PropertyRef Name="ID_Diskov" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Diskov" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Dv__4AB81AF0">
+    <End Role="Dvorniki" Type="Self.Dvorniki" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dvorniki">
+        <PropertyRef Name="ID_Dvornikov" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Dvornikov" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Fo__4F7CD00D">
+    <End Role="Fonarik" Type="Self.Fonarik" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fonarik">
+        <PropertyRef Name="ID_Fonarik" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Fonarik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Ko__4D94879B">
+    <End Role="Kovrik" Type="Self.Kovrik" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kovrik">
+        <PropertyRef Name="ID_Kovrik" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Kovrik" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Ko__5165187F">
+    <End Role="Kolonki" Type="Self.Kolonki" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kolonki">
+        <PropertyRef Name="ID_Kolonki" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Kolonki" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Oi__4BAC3F29">
+    <End Role="Oil" Type="Self.Oil" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oil">
+        <PropertyRef Name="ID_Oil" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Oil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Pe__5070F446">
+    <End Role="Perchatki" Type="Self.Perchatki" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perchatki">
+        <PropertyRef Name="ID_Perchatki" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Perchatki" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_Ru__48CFD27E">
+    <End Role="Rul" Type="Self.Rul" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rul">
+        <PropertyRef Name="ID_Rul" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_Rul" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Shop_auto__ID_VD__4CA06362">
+    <End Role="VD" Type="Self.VD" Multiplicity="1" />
+    <End Role="Shop_auto_product" Type="Self.Shop_auto_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VD">
+        <PropertyRef Name="ID_VD" />
+      </Principal>
+      <Dependent Role="Shop_auto_product">
+        <PropertyRef Name="ID_VD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище OOO_RULModelContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DIski" EntityType="Self.DIski" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dvorniki" EntityType="Self.Dvorniki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fonarik" EntityType="Self.Fonarik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kolonki" EntityType="Self.Kolonki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kovrik" EntityType="Self.Kovrik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oil" EntityType="Self.Oil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perchatki" EntityType="Self.Perchatki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rul" EntityType="Self.Rul" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VD" EntityType="Self.VD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Autorization" EntityType="Self.Autorization" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Autorization].[Login] AS [Login], 
+    [Autorization].[Passsword] AS [Passsword]
+    FROM [dbo].[Autorization] AS [Autorization]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Shop_auto_product" EntityType="Self.Shop_auto_product" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Shop_auto_product].[ID_Rul] AS [ID_Rul], 
+    [Shop_auto_product].[ID_Dvornikov] AS [ID_Dvornikov], 
+    [Shop_auto_product].[ID_Fonarik] AS [ID_Fonarik], 
+    [Shop_auto_product].[ID_Oil] AS [ID_Oil], 
+    [Shop_auto_product].[ID_Kovrik] AS [ID_Kovrik], 
+    [Shop_auto_product].[ID_Diskov] AS [ID_Diskov], 
+    [Shop_auto_product].[ID_VD] AS [ID_VD], 
+    [Shop_auto_product].[ID_Perchatki] AS [ID_Perchatki], 
+    [Shop_auto_product].[ID_Kolonki] AS [ID_Kolonki], 
+    [Shop_auto_product].[ID_Admin] AS [ID_Admin]
+    FROM [dbo].[Shop_auto_product] AS [Shop_auto_product]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Shop_auto__ID_Ad__4E88ABD4" Association="Self.FK__Shop_auto__ID_Ad__4E88ABD4">
+      <End Role="Admin" EntitySet="Admin" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Di__49C3F6B7" Association="Self.FK__Shop_auto__ID_Di__49C3F6B7">
+      <End Role="DIski" EntitySet="DIski" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Dv__4AB81AF0" Association="Self.FK__Shop_auto__ID_Dv__4AB81AF0">
+      <End Role="Dvorniki" EntitySet="Dvorniki" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Fo__4F7CD00D" Association="Self.FK__Shop_auto__ID_Fo__4F7CD00D">
+      <End Role="Fonarik" EntitySet="Fonarik" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Ko__4D94879B" Association="Self.FK__Shop_auto__ID_Ko__4D94879B">
+      <End Role="Kovrik" EntitySet="Kovrik" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Ko__5165187F" Association="Self.FK__Shop_auto__ID_Ko__5165187F">
+      <End Role="Kolonki" EntitySet="Kolonki" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Oi__4BAC3F29" Association="Self.FK__Shop_auto__ID_Oi__4BAC3F29">
+      <End Role="Oil" EntitySet="Oil" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Pe__5070F446" Association="Self.FK__Shop_auto__ID_Pe__5070F446">
+      <End Role="Perchatki" EntitySet="Perchatki" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_Ru__48CFD27E" Association="Self.FK__Shop_auto__ID_Ru__48CFD27E">
+      <End Role="Rul" EntitySet="Rul" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Shop_auto__ID_VD__4CA06362" Association="Self.FK__Shop_auto__ID_VD__4CA06362">
+      <End Role="VD" EntitySet="VD" />
+      <End Role="Shop_auto_product" EntitySet="Shop_auto_product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

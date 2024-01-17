@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0a766c4f29b4421fb571e152180c6597" Name="Diagram1">
+        <EntityTypeShape EntityType="OOO_RULModel.Admin" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.DIski" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Dvorniki" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Fonarik" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Kolonki" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Kovrik" Width="1.5" PointX="0.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Oil" Width="1.5" PointX="0.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Perchatki" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Rul" Width="1.5" PointX="0.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.VD" Width="1.5" PointX="0.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Autorization" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OOO_RULModel.Shop_auto_product" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Ad__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Di__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Dv__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Fo__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Ko__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Ko__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Oi__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Pe__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_Ru__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="OOO_RULModel.FK__Shop_auto__ID_VD__4CA06362" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
