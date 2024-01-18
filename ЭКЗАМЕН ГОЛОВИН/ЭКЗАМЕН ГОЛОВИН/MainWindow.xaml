@@ -16,6 +16,6 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Frame x:Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.ColumnSpan="2"></Frame>
-        <Button Grid.ColumnSpan="2" HorizontalAlignment="Right" Style="{StaticResource MainButton}" Click="OutButton_Click" x:Name="OutButton">Выйти</Button>
+        <Button Background="Blue" Foreground="Yellow" Grid.ColumnSpan="2" HorizontalAlignment="Right" Style="{StaticResource MainButton}" Click="OutButton_Click" x:Name="OutButton">Выйти</Button>
     </Grid>
 </Window>
