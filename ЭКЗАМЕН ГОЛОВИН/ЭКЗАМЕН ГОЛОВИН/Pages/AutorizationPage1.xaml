@@ -25,8 +25,8 @@
                 <TextBox x:Name="CaptchaTextBox" Style="{StaticResource MainTextBox}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button Background="PaleGreen" Foreground="Bisque" Click="LoginButton_Click" x:Name="LoginButton" Style="{StaticResource MainButton}">Войти</Button>
-                <Button Click="GuestButton_Click" x:Name="GuestButton" Style="{StaticResource MainButton}">Логин</Button>
+                <Button FontFamily="Arial Black" Background="CadetBlue" Foreground="Cornsilk" Click="LoginButton_Click" x:Name="LoginButton" Style="{StaticResource MainButton}">Войти</Button>
+                <Button FontFamily="Comic Sans MS" Background="Chocolate" Foreground="Cyan" Click="GuestButton_Click" x:Name="GuestButton" Style="{StaticResource MainButton}">Логин</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
