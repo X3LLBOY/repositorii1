@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ЭКЗАМЕН_ГОЛОВИН"
         mc:Ignorable="d"
-        Title="MainWindow" Background="DarkSeaGreen" Height="450" Width="800">
+        Title="MainWindow" Background="DarkViolet" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -16,6 +16,6 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Frame x:Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.ColumnSpan="2"></Frame>
-        <Button Background="Yellow" Foreground="Black" Grid.ColumnSpan="2" HorizontalAlignment="Right" Style="{StaticResource MainButton}" Click="OutButton_Click" x:Name="OutButton">Выйти</Button>
+        <Button Background="OliveDrab" Foreground="CadetBlue" Grid.ColumnSpan="2" HorizontalAlignment="Right" Style="{StaticResource MainButton}" Click="OutButton_Click" x:Name="OutButton">Выйти</Button>
     </Grid>
 </Window>

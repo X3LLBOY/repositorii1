@@ -12,12 +12,12 @@
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Style="{StaticResource MainTextBlock}">Логин</TextBlock>
-                    <TextBlock Style="{StaticResource MainTextBlock}">Пароль</TextBlock>
+                    <TextBlock FontFamily="Comic Sans MS" Style="{StaticResource MainTextBlock}">Логин</TextBlock>
+                    <TextBlock FontFamily="Comic Sans MS" Style="{StaticResource MainTextBlock}">Пароль</TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
-                    <TextBox Name="LoginTextBox" Style="{StaticResource MainTextBox}"></TextBox>
-                    <PasswordBox Style="{StaticResource MainPasswordBox}"></PasswordBox>
+                    <TextBox Name="LoginTextBox" Style="{StaticResource MainTextBox}">admin</TextBox>
+                    <PasswordBox Style="{StaticResource MainPasswordBox}" Password="1111"></PasswordBox>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Vertical" x:Name="CaptchaStackPanel" Visibility="Collapsed" HorizontalAlignment="Center">
@@ -25,7 +25,7 @@
                 <TextBox x:Name="CaptchaTextBox" Style="{StaticResource MainTextBox}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button Click="LoginButton_Click" x:Name="LoginButton" Style="{StaticResource MainButton}">Войти</Button>
+                <Button Background="PaleGreen" Foreground="Bisque" Click="LoginButton_Click" x:Name="LoginButton" Style="{StaticResource MainButton}">Войти</Button>
                 <Button Click="GuestButton_Click" x:Name="GuestButton" Style="{StaticResource MainButton}">Логин</Button>
             </StackPanel>
         </StackPanel>
